@@ -7,10 +7,9 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="App"
-      style = {{position:'relative', top:0, height:"100%"}}
+      style = {{position:'relative', top:0}}
     >
       
-
       <div className="background-image"/>
 
 

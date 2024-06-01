@@ -38,7 +38,7 @@ export const NavBar = (props) => {
             
         >
 
-            <Toolbar sx = {{backgroundColor:'orange'}} >
+            <Toolbar sx = {{backgroundColor:'#37aeb8'}} >
 
               
                 <TopDrawer show={isShowDrawer} closeDrawer = {closeDrawer}/>
