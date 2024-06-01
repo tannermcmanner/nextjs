@@ -52,7 +52,7 @@ function AboutPage() {
             
               <Grid xs = {12} md = {8}>
                 <Typography variant='h5' color='white' sx={{ m:5, width:550, textAlign:'left'}}>
-                  My name is Tanner McNatt. I&apos;m a software engineer specializing in front end web development. I&apos;m proficient in JaveScript, HTML, CSS, React, and Material UI. I&apos;m naturally very creative, and that creativity sparks my interest and excitment for coding. My curiosity helps me explore and understand new concepts quickly!
+                  My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
                 </Typography>
               </Grid>
             </Grid>
