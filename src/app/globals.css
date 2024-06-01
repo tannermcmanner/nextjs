@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 html, :root, body,  .App {
   height: '100vh !important'
 }
@@ -16,8 +18,6 @@ html, :root, body,  .App {
   background: url('/images/homepage-background.jpg') no-repeat center bottom;
   background-size: cover;
   background-position: center calc(50%-20px); /* Shift the background image down by 20px */
-
-
 }
 
 :root {

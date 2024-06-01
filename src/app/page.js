@@ -3,8 +3,11 @@
 import { NavBar } from '@/components/Navbar';
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
+// import { Josefin_Sans } from 'next/font/google';
 
-export default function Home() {
+// const font = Josefin_Sans({ subsets: ['latin'] });
+
+export default function Home({children}) {
   return (
     <div className="App"
       style = {{position:'relative', top:0}}
@@ -12,14 +15,11 @@ export default function Home() {
       
       <div className="background-image"/>
 
-
-        {/* Use Kanit font */}
-
         <NavBar/>
 
         <Box sx = {{zIndex:1, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 5}}>
 
-          <Typography variant = 'h4' sx = {{mt:6}} color = 'white'>
+          <Typography variant = 'h4' sx = {{mt:6, fontFamily:'Josefin_Sans'}} color = 'white'>
             Hello, my name is
           </Typography>
 
