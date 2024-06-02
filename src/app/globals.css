@@ -33,7 +33,7 @@ html, :root, body,  .App {
 
 @media (min-width: 0) {
   .contact-background {
-    background-position: left bottom 45%;
+    background-position: left bottom 35%;
   }
 }
 
