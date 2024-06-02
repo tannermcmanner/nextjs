@@ -61,7 +61,7 @@ export const NavBar = (props) => {
 
                 <Box sx = {{flexGrow:1, display:'flex'}}>
                     <Link href = '/'  style={{textDecoration:'none', color:'white'}}>
-                        <Typography variant="h6" component="div" 
+                        <Typography display='swap' variant="h6" component="div" 
                             sx={{ 
                                 textAlign:'left', 
                                 ml:2, 
@@ -69,7 +69,10 @@ export const NavBar = (props) => {
                                 color:'white',
                                 ':hover': {
                                     color:'#e3e3e3'
-                                }
+                                },
+                                fontFamily:'Josefin Sans',
+                                fontWeight:400,
+                                fontSize:25
                             }}>
                             Home
                         </Typography>
@@ -85,14 +88,17 @@ export const NavBar = (props) => {
                             <Typography  
                                 variant="h6" 
                                 component="div" 
-                                
+                                display='swap'
                                 sx={{ 
                                     flexGrow:1, 
                                     mx:2, 
                                     color:'white',
                                     ':hover': {
                                         color:'#e3e3e3'
-                                    }
+                                    },
+                                    fontFamily:'Josefin Sans',
+                                    fontWeight:400,
+                                    fontSize:25
                                 }} 
                                 
                             >
@@ -135,8 +141,17 @@ export const TopDrawer = ({show, closeDrawer}) => {
             <ListItem disablePadding>
                 <ListItemButton sx={{ textAlign: 'center' }}>
                     <Link href = '/' style = {{textDecoration:'none', color:"white"}}>
-                        <Typography  variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        Home
+                        <Typography
+                            display='swap'
+                            variant="h6"
+                            component="div"
+                            sx={{
+                                flexGrow: 1,
+                                fontFamily:'Josefin Sans',
+                                fontWeight:400,
+                                fontSize:25
+                            }}>
+                            Home
                         </Typography>
                     </Link>
 
@@ -152,7 +167,17 @@ export const TopDrawer = ({show, closeDrawer}) => {
                     <ListItem key={item.label} disablePadding>
                         <ListItemButton sx={{ textAlign: 'center' }}>
                             <Link key={item.label} href = {item.path} style = {{textDecoration:'none', color:"white"}}>
-                                <Typography  variant="h6" component="div" sx={{ flexGrow: 1, mx:2 }}>
+                                <Typography
+                                    display='swap'
+                                    variant="h6"
+                                    component="div"
+                                    sx={{
+                                        flexGrow: 1,
+                                        mx:2,
+                                        fontFamily:'Josefin Sans',
+                                        fontWeight:400,
+                                        fontSize:25
+                                    }}>
                                     {item.label}
                                 </Typography>
                             </Link>

@@ -20,6 +20,11 @@ html, :root, body,  .App {
   background-position: center calc(50%-20px); /* Shift the background image down by 20px */
 }
 
+.contact-background {
+  background: url('/images/wired-phone.png') no-repeat;
+  background-size: contain;
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

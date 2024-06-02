@@ -24,7 +24,7 @@ function JavaScriptPage() {
 
         <Box sx = {{zIndex:1, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 7}}>
 
-            <Typography variant = 'h3' sx = {{my:5}} color = 'white'>
+            <Typography display='swap' variant = 'h3' sx = {{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
                 JavaScript Examples
             </Typography>
 
@@ -35,16 +35,16 @@ function JavaScriptPage() {
                     <Grid item md = {8} xs = {12} sx = {{mx:'auto'}} >
                         
                         
-                        <Tabs 
-                        value={currentTab} 
-                        onChange={changeTab} 
-                        aria-label="basic tabs example" 
-                        textColor=""
-                        sx = {{color:'white'}}
-                        variant='fullWidth'
-                        TabIndicatorProps = {{
-                            sx: {backgroundColor:'#37aeb8'}
-                        }}
+                        <Tabs
+                            value={currentTab} 
+                            onChange={changeTab} 
+                            aria-label="basic tabs example" 
+                            textColor=""
+                            sx = {{color:'white'}}
+                            variant='fullWidth'
+                            TabIndicatorProps = {{
+                                sx: {backgroundColor:'#37aeb8'}
+                            }}
                         >
                         <Tab label="Conditionals & Functions" value={0}/>
                         <Tab label="Arrays & Loops"  value={3} />
@@ -57,7 +57,7 @@ function JavaScriptPage() {
                 {
                 currentTab === 0 && (
                 <>
-                    <Typography variant = 'h4' sx = {{my:5}} color = 'white'>
+                    <Typography display='swap' variant='h4' sx={{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
                     Conditionals &amp; Functions
                     </Typography>
                     <MyAccordion
@@ -83,7 +83,7 @@ function JavaScriptPage() {
                 {
                 currentTab === 3 && (
                 <>
-                    <Typography variant = 'h4' sx = {{my:5}} color = 'white'>
+                    <Typography display='swap' variant='h4' sx={{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
                     Arrays &amp; Loops
                     </Typography>
                     <MyAccordion
@@ -106,7 +106,7 @@ function JavaScriptPage() {
                 {
                 currentTab === 6 && (
                 <>
-                    <Typography variant = 'h4' sx = {{my:5}} color = 'white'>
+                    <Typography display='swap' variant='h4' sx={{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
                     Objects
                     </Typography>
                     <MyAccordion

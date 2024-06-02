@@ -18,7 +18,7 @@ function AboutPage() {
 
             <Grid xs = {12} >
 
-              <Typography variant='h3' sx={{mt:5, mb:4}} color='white'>
+              <Typography display='swap' variant='h3' sx={{mt:5, mb:4, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
                 About Me
               </Typography>
 
@@ -51,7 +51,7 @@ function AboutPage() {
               </Grid>
             
               <Grid xs = {12} md = {8}>
-                <Typography variant='h5' color='white' sx={{ m:5, width:550, textAlign:'left'}}>
+                <Typography display='swap' variant='h5' color='white' sx={{m:5, width:550, textAlign:'left', fontFamily:'Josefin Sans', fontWeight:300}}>
                   My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
                 </Typography>
               </Grid>
