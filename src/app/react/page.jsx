@@ -19,7 +19,7 @@ function ReactPage() {
 
                 <Divider sx={{bgcolor:"white"}}/>
 
-                <Typography display='swap' variant='h5' sx={{mt:7, px:5, fontFamily:'Josefin Sans', fontWeight:300}}>
+                <Typography display='swap' variant='h5' sx={{mt:7, px:5, color:'white', fontFamily:'Josefin Sans', fontWeight:300}}>
                     This whole website was constructed using React, Material UI, and custom CSS classes.
                 </Typography>
 

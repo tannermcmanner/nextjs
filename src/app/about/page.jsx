@@ -45,15 +45,15 @@ function AboutPage() {
               </Card>
             </Box>
           
-            <Box>
-              <Typography display='swap' variant='h5' color='white' sx={{mt:5, px:3, width:520, textAlign:'left', fontFamily:'Josefin Sans', fontWeight:300}}>
+            <Box sx={{mx:20}}>
+              <Typography display='swap' variant='h5' color='white' sx={{mt:5, textAlign:'center', fontFamily:'Josefin Sans', fontWeight:300}}>
                 My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
               </Typography>
             </Box>
 
-            <Box sx={{ m:6, height:180, width:200, border:1, borderRadius:2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <Box sx={{ m:6, height:180, width:200, color:'white', border:1, borderRadius:2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <Box sx={{mt:2}}>
-                <Typography display='swap' sx={{px:1, fontSize:35, fontFamily:'Josefin Sans', fontWeight:400}}>
+                <Typography display='swap' sx={{px:1, color:'white', fontSize:35, fontFamily:'Josefin Sans', fontWeight:400}}>
                   Resume
                 </Typography>
                 <Link display='swap' sx={{fontSize:20, fontFamily:'Josefin Sans', fontWeight:400}} href="mailto:tannermcmanner@gmail.com">
@@ -62,6 +62,7 @@ function AboutPage() {
               </Box>
             </Box>
           </Box>
+
         </Box>
     </div>
   );
