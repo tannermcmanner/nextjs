@@ -25,9 +25,15 @@ html, :root, body,  .App {
   background-size: contain;
 }
 
-@media (min-width: 0) {
+@media (min-width: 481) {
   .contact-background {
     background-position: left center;
+  }
+}
+
+@media (max-width: 480) {
+  .contact-background {
+    background-position: left bottom 45%;
   }
 }
 
