@@ -24,7 +24,7 @@ function JavaScriptPage() {
 
         <Box sx = {{zIndex:1, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 7}}>
 
-            <Typography display='swap' variant = 'h3' sx = {{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
+            <Typography display='swap' variant = 'h3' sx = {{my:5, textShadow: '1px 1px 2px black', fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
                 JavaScript Examples
             </Typography>
 
@@ -58,23 +58,23 @@ function JavaScriptPage() {
                 currentTab === 0 && (
                 <>
                     <Typography display='swap' variant='h4' sx={{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
-                    Conditionals &amp; Functions
+                        Conditionals &amp; Functions
                     </Typography>
                     <MyAccordion
-                    title = 'Conditional Logic 1'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/0khzbswu/7/embedded/js,result/'
+                        title = 'Conditional Logic 1'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/0khzbswu/7/embedded/js,result/'
                     />
                     <MyAccordion
-                    title = 'Conditional Logic 2'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/baw20j1L/7/embedded/js,result/'
+                        title = 'Conditional Logic 2'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/baw20j1L/7/embedded/js,result/'
                     />
                     <MyAccordion
-                    title = 'Functions 1'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/8throkbj/1/embedded/js,result/'
+                        title = 'Functions 1'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/8throkbj/1/embedded/js,result/'
                     />
                     <MyAccordion
-                    title = 'Functions 2'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/8cru0wat/1/embedded/js,result/'
+                        title = 'Functions 2'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/8cru0wat/1/embedded/js,result/'
                     />
                 </>)
                 }
@@ -84,19 +84,19 @@ function JavaScriptPage() {
                 currentTab === 3 && (
                 <>
                     <Typography display='swap' variant='h4' sx={{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
-                    Arrays &amp; Loops
+                        Arrays &amp; Loops
                     </Typography>
                     <MyAccordion
-                    title = 'Arrays 1'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/uwjs0qt5/1/embedded/js,result/'
+                        title = 'Arrays 1'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/uwjs0qt5/1/embedded/js,result/'
                     />
                     <MyAccordion
-                    title = 'Arrays 2'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/deuzjvLs/2/embedded/js,result/'
+                        title = 'Arrays 2'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/deuzjvLs/2/embedded/js,result/'
                     />
                     <MyAccordion
-                    title = 'Iterator Functions'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/a9m70peh/2/embedded/js,result/'
+                        title = 'Iterator Functions'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/a9m70peh/2/embedded/js,result/'
                     />
                 </>)
                 
@@ -107,15 +107,15 @@ function JavaScriptPage() {
                 currentTab === 6 && (
                 <>
                     <Typography display='swap' variant='h4' sx={{my:5, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
-                    Objects
+                        Objects
                     </Typography>
                     <MyAccordion
-                    title = 'Objects 1'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/n9j3bLqa/1/embedded/js,result/'
+                        title = 'Objects 1'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/n9j3bLqa/1/embedded/js,result/'
                     />
                     <MyAccordion
-                    title = 'Objects 2'
-                    fiddleSrc = '//jsfiddle.net/tannermcmanner/jyeLst9k/2/embedded/js,result/'
+                        title = 'Objects 2'
+                        fiddleSrc = '//jsfiddle.net/tannermcmanner/jyeLst9k/2/embedded/js,result/'
                     />
                 </>)
                 }

@@ -17,7 +17,7 @@ function ContactPage() {
 
             <Box sx = {{zIndex:1, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 7}}>
 
-                <Typography display='swap' variant = 'h3' sx = {{mt:5, mb:4, px:4, fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
+                <Typography display='swap' variant = 'h3' sx = {{mt:5, mb:4, px:4, textShadow: '1px 1px 2px black', fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
                     Let&apos;s keep in touch!
                 </Typography>
 
@@ -26,7 +26,7 @@ function ContactPage() {
                 <Box sx={{ mt:3, display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <Person sx={{ color: 'white', fontSize: 40 }} />
-                        <Card sx={{ mt:3, mx:4, mb:6, width: 300, height: 250, opacity: 0.6 }}>
+                        <Card sx={{ mt:3, mx:4, mb:6, width: 300, height: 250, opacity: 0.7 }}>
                             <CardContent>
                                 <Typography display='swap' sx={{px:1, mt:4, fontFamily:'Josefin Sans', fontWeight:400}}>
                                     Email: 

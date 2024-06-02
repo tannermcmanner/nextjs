@@ -25,6 +25,12 @@ html, :root, body,  .App {
   background-size: contain;
 }
 
+@media (min-width: 0) {
+  .contact-background {
+    background-position: left center;
+  }
+}
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;

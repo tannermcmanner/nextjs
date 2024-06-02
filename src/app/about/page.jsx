@@ -18,7 +18,7 @@ function AboutPage() {
 
             <Grid xs = {12} >
 
-              <Typography display='swap' variant='h3' sx={{mt:5, mb:4, fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
+              <Typography display='swap' variant='h3' sx={{mt:5, mb:4, textShadow: '1px 1px 2px black', fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
                 About Me
               </Typography>
 
