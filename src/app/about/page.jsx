@@ -45,7 +45,7 @@ function AboutPage() {
               </Card>
             </Box>
           
-            <Box sx={{mx:20}}>
+            <Box sx={{mx:{xs:5, sm:8, md:10, lg:20}}}>
               <Typography display='swap' variant='h5' color='white' sx={{mt:5, textAlign:'center', fontFamily:'Josefin Sans', fontWeight:300}}>
                 My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
               </Typography>

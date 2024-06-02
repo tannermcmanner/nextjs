@@ -21,7 +21,7 @@ export default function Home() {
             Hello, my name is
           </Typography>
 
-          <Typography display='swap' variant = 'h1' sx = {{mt:2, px:4, textShadow: '1px 1px 3px black', fontFamily:'Josefin Sans', fontWeight:200, fontSize: {xs: '4rem', sm: '4.5rem', md: '5rem', lg: '6rem'}}} color = 'white'>
+          <Typography display='swap' variant = 'h1' sx = {{mt:2, px:4, textShadow: '1px 1px 3px black', fontFamily:'Josefin Sans', fontWeight:200, fontSize:{xs: '4rem', sm: '4.5rem', md: '5rem', lg: '6rem'}}} color = 'white'>
             TANNER McNATT
           </Typography>
 
