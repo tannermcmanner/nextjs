@@ -1,9 +1,11 @@
 'use client';
 
-import { Box, Card, Divider, Grid, Tab, Tabs, Typography } from '@mui/material';
+import { Box, Card, CardContent, Divider, Grid, Link, Tab, Tabs, Typography } from '@mui/material';
 import { useState } from 'react';
 import { NavBar } from '@/components/Navbar';
 import Image from 'next/image';
+import zIndex from '@mui/material/styles/zIndex';
+import { ArticleOutlined } from '@mui/icons-material';
 
 function AboutPage() {
 
@@ -12,51 +14,54 @@ function AboutPage() {
 
         <NavBar/>
 
-        <Box sx = {{zIndex:2, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 7}}>
+        <Box sx = {{zIndex:1, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 7}}>
 
-          <Grid container>
+          <Typography display='swap' variant='h3' sx={{mt:5, mb:4, textShadow: '1px 1px 2px black', fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
+            About Me
+          </Typography>
 
-            <Grid xs = {12} >
+          <Divider sx={{bgcolor:"white"}}/>
 
-              <Typography display='swap' variant='h3' sx={{mt:5, mb:4, textShadow: '1px 1px 2px black', fontFamily:'Josefin Sans', fontWeight:300}} color='white'>
-                About Me
+          <Box sx={{display:'flex', justifyContent:'space-evenly', flexWrap:'wrap'}}>
+            <Box sx={{mt:5, pl:4}}>
+              <Card  
+                className='box-shadow'
+                sx = {{
+                  height:'300px', width:'250px', borderRadius:4,  overflow: 'hidden', position: 'relative'
+                }} 
+              >
+                <img
+                  src="/images/tanner.jpg"
+                  alt="Your Image Description"
+                  style={{
+                    width: '100%',
+                    objectFit: 'contain',
+                    position: 'absolute',
+                    top: -20,
+                    left: 0,
+                    
+                  }}
+                />
+              </Card>
+            </Box>
+          
+            <Box>
+              <Typography display='swap' variant='h5' color='white' sx={{mt:5, px:3, width:520, textAlign:'left', fontFamily:'Josefin Sans', fontWeight:300}}>
+                My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
               </Typography>
+            </Box>
 
-              <Divider sx={{bgcolor:"white"}}/>
-
-            </Grid>
-
-            <Grid container display="flex">
-              <Grid item xs={12} md={4} sx={{pt: 5, pl: 5, }}>
-                <Card  
-                  className='box-shadow'
-                  sx = {{
-                    height:'100%', borderRadius:4,  overflow: 'hidden',position: 'relative', 
-                    minHeight:'200px'
-                  }} 
-                >
-                  <img
-                    src="/images/tanner.jpg"
-                    alt="Your Image Description"
-                    style={{
-                      width: '100%',         // Make the image take up 100% of the grid item's width
-                      objectFit: 'contain',  // Object fit can be "cover", "contain", "none", etc.
-                      position: 'absolute',  // Position absolute to fit within the parent's relative positioning
-                      top: -50,
-                      left: 0,
-                     
-                    }}
-                  />
-                </Card>
-              </Grid>
-            
-              <Grid xs = {12} md = {8}>
-                <Typography display='swap' variant='h5' color='white' sx={{m:5, width:550, textAlign:'left', fontFamily:'Josefin Sans', fontWeight:300}}>
-                  My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
+            <Box sx={{ m:6, height:180, width:200, border:1, borderRadius:2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <Box sx={{mt:2}}>
+                <Typography display='swap' sx={{px:1, fontSize:35, fontFamily:'Josefin Sans', fontWeight:400}}>
+                  Resume
                 </Typography>
-              </Grid>
-            </Grid>
-          </Grid>
+                <Link display='swap' sx={{fontSize:20, fontFamily:'Josefin Sans', fontWeight:400}} href="mailto:tannermcmanner@gmail.com">
+                  <ArticleOutlined sx={{ m:2, color:'#26e6ff', fontSize:70 }} />
+                </Link>
+              </Box>
+            </Box>
+          </Box>
         </Box>
     </div>
   );

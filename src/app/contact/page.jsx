@@ -4,7 +4,7 @@ import { Box, Card, CardContent, CardMedia, Divider, Grid, Link, Tab, Tabs, Typo
 import { MyAccordion } from '@/components/Accordion';
 import { useState } from 'react';
 import { Drawer, NavBar } from '@/components/Navbar';
-import { AlternateEmail, Person, Phone } from '@mui/icons-material';
+import { AlternateEmail, Phone } from '@mui/icons-material';
 
 function ContactPage() {
 
@@ -25,19 +25,22 @@ function ContactPage() {
 
                 <Box sx={{ mt:3, display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <Person sx={{ color: 'white', fontSize: 40 }} />
-                        <Card sx={{ mt:3, mx:4, mb:6, width: 300, height: 250, opacity: 0.7 }}>
+                        <Box sx={{ display: 'flex'}}>
+                            <AlternateEmail sx={{ mx:2, color: 'white', fontSize: 40 }} />
+                            <Phone sx={{ mx:2, color: 'white', fontSize: 40 }} />
+                        </Box>
+                        <Card sx={{ mt:3, mx:4, mb:6, width: 300, height: 250, opacity: 0.8 }}>
                             <CardContent>
-                                <Typography display='swap' sx={{px:1, mt:4, fontFamily:'Josefin Sans', fontWeight:400}}>
-                                    Email: 
+                                <Typography display='swap' sx={{px:1, mt:4, fontSize:20, fontFamily:'Josefin Sans', fontWeight:400}}>
+                                    Email:
                                 </Typography>
-                                    <Link display='swap' sx={{fontFamily:'Josefin Sans', fontWeight:400}} href="mailto:tannermcmanner@gmail.com">
+                                    <Link display='swap' sx={{fontSize:20, fontFamily:'Josefin Sans', fontWeight:400}} href="mailto:tannermcmanner@gmail.com">
                                         tannermcmanner@gmail.com
                                     </Link>
-                                <Typography display='swap' sx={{px:1, mt:5, fontFamily:'Josefin Sans', fontWeight:400}} gutterBottom>
+                                <Typography display='swap' sx={{fontSize:20, px:1, mt:5, fontFamily:'Josefin Sans', fontWeight:400}} gutterBottom>
                                     Phone Number:
                                 </Typography>
-                                <Link display='swap' sx={{fontFamily:'Josefin Sans', fontWeight:400}} href="tel:+12082866723" color="inherit">
+                                <Link display='swap' sx={{fontSize:20, fontFamily:'Josefin Sans', fontWeight:400}} href="tel:+12082866723" color="inherit">
                                     208-286-6723
                                 </Link>
                             </CardContent>

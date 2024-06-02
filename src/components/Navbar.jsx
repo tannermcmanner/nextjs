@@ -10,6 +10,10 @@ const navItems = [
         label: 'Javascript'
     },
     {
+        path: '/react',
+        label: 'React'
+    },
+    {
         path: '/about',
         label: 'About'
     },
@@ -17,10 +21,6 @@ const navItems = [
         path: '/contact',
         label: 'Contact'
     },
-    // {
-    //     path: '/',
-    //     label: 'Phaser.io (Games)'
-    // },
 ]
 
 const backgroundColor = '#37aeb8'
