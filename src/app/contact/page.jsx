@@ -17,7 +17,7 @@ function ContactPage() {
 
             <Box sx = {{zIndex:1, position: 'relative', display:'flex', justifyContent:'center', flexDirection:'column', textAlign:'center', mt: 7}}>
 
-                <Typography display='swap' variant = 'h3' sx = {{mt:5, mb:4, fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
+                <Typography display='swap' variant = 'h3' sx = {{mt:5, mb:4, px:4, fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
                     Let&apos;s keep in touch!
                 </Typography>
 
