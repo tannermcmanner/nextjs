@@ -5,7 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 
 export const MyAccordion = ({title, fiddleSrc}) => {
     return (
-        <Grid sx = {{mx:5, mb:1}} >
+        <Grid sx = {{mx: {xs:5, sm:6, md:7, lg:10}, mb:1}} >
             <Accordion>
                 <AccordionSummary
                 // expandIcon={<ExpandMoreIcon />}

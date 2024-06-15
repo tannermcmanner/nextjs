@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Card, CardContent, Divider, Fade, Grid, Link, Slide, Tab, Tabs, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, Divider, Fade, Grid, Link, Slide, Tab, Tabs, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { NavBar } from '@/components/Navbar';
 import Image from 'next/image';
@@ -69,7 +69,7 @@ function AboutPage() {
                 <div>
                   <Slide direction='up' in={checked} container={containerRef.current} timeout={600} style={{transitionDelay:200}}>
                     <Typography display='swap' variant='h5' color='white' sx={{mt:5, textAlign:'center', fontFamily:'Josefin Sans', fontWeight:300}}>
-                      My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programing languages and frameworks.
+                      My name is Tanner McNatt. I am a software engineer specializing in front-end web development. I am proficient in NodeJS, HTML, CSS, React, and Material UI. Due to my background in the arts, I really enjoy the design aspect of web development. I am an independent learner who can understand new concepts quickly. I am open to learning new programming languages and frameworks.
                     </Typography>
                   </Slide>
                 </div>
@@ -85,9 +85,9 @@ function AboutPage() {
                         <Typography display='swap' sx={{px:1, color:'white', fontSize:35, fontFamily:'Josefin Sans', fontWeight:400}}>
                           Resume
                         </Typography>
-                        <Link display='swap' sx={{fontSize:20, fontFamily:'Josefin Sans', fontWeight:400}} href="mailto:tannermcmanner@gmail.com">
+                        <Button>
                           <ArticleOutlined sx={{ m:2, color:'#26e6ff', fontSize:70 }} />
-                        </Link>
+                        </Button>
                       </Box>
                     </Box>
                   </Slide>
