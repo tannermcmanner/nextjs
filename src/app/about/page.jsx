@@ -6,6 +6,7 @@ import { NavBar } from '@/components/Navbar';
 import Image from 'next/image';
 import zIndex from '@mui/material/styles/zIndex';
 import { ArticleOutlined } from '@mui/icons-material';
+// import CodingResume from '../CodingResume.pdf';
 
 function AboutPage() {
 
@@ -86,7 +87,9 @@ function AboutPage() {
                           Resume
                         </Typography>
                         <Button>
-                          <ArticleOutlined sx={{ m:2, color:'#26e6ff', fontSize:70 }} />
+                          <a href = 'C:\Coding\coding-website\public\images\CodingResume.pdf' target = '_blank' rel = 'noreferrer'>
+                            <ArticleOutlined sx={{ m:2, color:'#26e6ff', fontSize:70 }} />
+                          </a>
                         </Button>
                       </Box>
                     </Box>
