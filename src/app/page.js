@@ -55,11 +55,11 @@ export default function Home() {
           </Box>
 
           <Box ref={containerRef}>
-            <Fade in={checked} timeout={700} style={{transitionDelay:400}}>
+            <Fade in={checked} timeout={700} style={{transitionDelay:450}}>
               <div>
-                <Slide direction='up' in={checked} container={containerRef.current} timeout={500} style={{transitionDelay:400}}>
+                <Slide direction='up' in={checked} container={containerRef.current} timeout={500} style={{transitionDelay:450}}>
                   <Typography display='swap' variant = 'h5' sx = {{px:4, textShadow: '1px 1px 2px black', fontFamily:'Josefin Sans', fontWeight:300}} color = 'white'>
-                    Welcome to my page, feel free to look around
+                    Web Developer Specializing in Frontend Design
                   </Typography>
                 </Slide>
               </div>
